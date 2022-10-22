@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree&family=Lexend+Deca&family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree&family=Lexend+Deca&family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: url("Images/bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  font-family: "Poppins", sans-serif;
+  padding-left: 50px;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 150px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.container1 img {
+  width: 80%;
+}
+
+.container2 a {
+  text-decoration: none;
+  color: hsl(300, 69%, 71%);
+  background: white;
+  font-weight: 600;
+  padding: 10px 30px;
+  border-radius: 30px;
+  padding-top: 50px;
+}
+
+footer a {
+  padding: 10px 30px;
+  text-decoration: none;
+  color: hsl(257, 40%, 49%);
+  background: transparent;
+  border: 1px solid dodgerblue;
+  border-radius: 50px;
+}
+.icons {
+  display: flex;
+  justify-content: end;
+}
+
+@media screen and (min-width: 300px) {
+  html {
+    background: url("Images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15%;
+  }
+
+  .container1 img {
+    width: 65%;
+    justify-content: center;
+  }
+
+  .container2 {
+    width: 80%;
+    text-align: center;
+  }
+
+  .container2 a {
+    padding: 2% 15%;
+    text-align: center;
+  }
+
+  .icons {
+    justify-content: center;
+    padding: 20%;
+  }
+}
